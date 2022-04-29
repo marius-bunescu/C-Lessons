@@ -10,7 +10,7 @@ namespace Collections
         static void Main(String[] args)
         {
             #region ArrayList
-            ArrayList aList = new ArrayList();
+            List<string> aList = new List<string>();
 
             aList.Add("Mercedes");
             aList.Add("Audi");
@@ -57,7 +57,6 @@ namespace Collections
             Console.WriteLine("\nMercedes = {0}", aList.IndexOf("Mercedes", 0));
 
             #endregion
-
             Console.WriteLine("----------------------------------");
             #region Dictionary
             Dictionary<string, string> Cars = new Dictionary<string, string>();
@@ -65,7 +64,7 @@ namespace Collections
             Cars.Add("Germany", "Opel");
             Cars.Add("America", "Ford");
             Cars.Add("Japan", "Toyota");
-
+            
            
 
 
@@ -86,7 +85,7 @@ namespace Collections
             #endregion
             Console.WriteLine("----------------------------------");
             #region Queue
-            Queue nums = new Queue();
+            Queue<int> nums = new Queue<int>();
 
             nums.Enqueue(24);
             nums.Enqueue(61);
@@ -106,7 +105,7 @@ namespace Collections
             {
                 nums.Dequeue();
             }
-            object[] arr = nums.ToArray();
+            int[] arr = nums.ToArray();
 
             Console.WriteLine(string.Join(", ", arr));
             #endregion

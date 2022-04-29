@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Amdaris\\GitHubProjects\\TPA #1\\Homework3\\Homework3\\Homework3.csproj": {}
+    "D:\\Amdaris\\GitHubProjects\\TPA #1\\C-Lessons\\Homework3\\Homework3\\Homework3.csproj": {}
   },
   "projects": {
-    "D:\\Amdaris\\GitHubProjects\\TPA #1\\Homework3\\Homework3\\Homework3.csproj": {
+    "D:\\Amdaris\\GitHubProjects\\TPA #1\\C-Lessons\\Homework3\\Homework3\\Homework3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Amdaris\\GitHubProjects\\TPA #1\\Homework3\\Homework3\\Homework3.csproj",
+        "projectUniqueName": "D:\\Amdaris\\GitHubProjects\\TPA #1\\C-Lessons\\Homework3\\Homework3\\Homework3.csproj",
         "projectName": "Homework3",
-        "projectPath": "D:\\Amdaris\\GitHubProjects\\TPA #1\\Homework3\\Homework3\\Homework3.csproj",
+        "projectPath": "D:\\Amdaris\\GitHubProjects\\TPA #1\\C-Lessons\\Homework3\\Homework3\\Homework3.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "D:\\Amdaris\\GitHubProjects\\TPA #1\\Homework3\\Homework3\\obj\\",
+        "outputPath": "D:\\Amdaris\\GitHubProjects\\TPA #1\\C-Lessons\\Homework3\\Homework3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
