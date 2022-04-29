@@ -1,0 +1,15 @@
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.AssemblyInfoInputs.cache
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.AssemblyInfo.cs
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.csproj.CoreCompileInputs.cache
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\Homework3.exe
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\Homework3.deps.json
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\Homework3.runtimeconfig.json
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\Homework3.dll
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\ref\Homework3.dll
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\bin\Debug\net6.0\Homework3.pdb
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.dll
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\ref\Homework3.dll
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.pdb
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.genruntimeconfig.cache
+D:\Amdaris\GitHubProjects\TPA #1\Homework3\Homework3\obj\Debug\net6.0\Homework3.csproj.AssemblyReference.cache
