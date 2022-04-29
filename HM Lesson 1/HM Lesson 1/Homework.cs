@@ -1,177 +1,162 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace C_Sharp_Lesson_1_Homework
+namespace C_Sharp_Lesson_3_Homework
 {
     public class Homework
     {
-        public void CheckIfNumberIsEvenOrOdd(int number)
+        public void GetCentralElementFromMatrix(int[,] matrixOfIntegers)
         {
-            /* Exercise 1
-          * using "if" write a programm that checks whether an integer is greater then zero and even or odd
-          * Example:
-          * -------------------------------------------------
-          * |input   | result                               |
-          * |--------|--------------------------------------|
-          * |  1     | even                                 |
-          * |--------|--------------------------------------|
-          * |  2     | odd                                  |
-          * |--------|--------------------------------------|
-          * | -1     | the value should be greater then zero|
-          * -------------------------------------------------
-          * 
-          */
-            //your code here
-            if (number % 2 == 0 && number > 0)
-            {
-                Console.WriteLine("odd");
-            }
-            else if (number % 2 != 0 && number > 0)
-            {
-                Console.WriteLine("even");
-            }
-            else if (number < 0)
-            {
-                Console.WriteLine("The value should be greater than zero");
-            }
-        }
-        public void NumberDivideToFour(int number)
-        {
-            /* Exercise 2
-        * using a ternary operator write a program that print if number divide to 4
-        * Example: 
-        * --------------------------------------------
-        * |input   | result                          |
-        * |--------|---------------------------------|
-        * |  -4    | The number divide to 4          |
-        * |--------|---------------------------------|
-        * |   2    | The number doesn't divide to 4  |
-        * --------------------------------------------
-        */
-            //your code here
-
-
-            var Result = (number % 4 == 0) ? "The number divide to 4" : "The number doesn't divide to 4";
-            Console.WriteLine(Result);
-        }
-        public void DayOfWeek(string day)
-        {
-            /* Exercise 3
-             * using "switch" statement write a program that print the number of day of week
-             * Example: monday - 1, tuesday - 2 etc. 
-             * ---------------------------------------------------------
-             * |day           |number                                  |
-             * |--------------|----------------------------------------|
-             * |monday        |   1                                    |
-             * |tuesday       |   2                                    |
-             * |wednesday     |   3                                    |
-             * |thursday      |   4                                    |
-             * |friday        |   5                                    |
-             * |saturday      |   6                                    |
-             * |sunday        |   7                                    |
-             * |default value |Wrong value! Please give a day of a week|
-             * ---------------------------------------------------------
+            /*print to console the central element from matrixOfIntegers, if not exist print: "This matrix doesn't have a central element"
+             * |   input           | result             |
+             * |-------------------|--------------------|
+             * | {                 |                    |
+             * |  { 1,   3,  5},   |    The central     |
+             * |  {-1, 100, 11},   |  element is 100    |
+             * |  { 2,  15, 44}    |                    |
+             * |  }                |                    |
+             * |----------------------------------------|
+             * |{                  |                    |
+             * | { 1,  6, 21,  8 },| This matrix doesn't|
+             * | { 5, -4,  5,  7 },| have a central     |
+             * | {77,  5,  0, 74 } |  element           |
+             * | }                 |                    |
+             * ------------------------------------------
+             *    
              */
+            int rows = matrixOfIntegers.GetLength(0);
+            int columns = matrixOfIntegers.GetLength(1);
 
-            switch (day)
+            if (rows % 2 != 0 && columns % 2 != 0)
             {
-                case "Monday":
-                    Console.WriteLine(1);
-                    break;
-                case "Tuesday":
-                    Console.WriteLine(2);
-                    break;
-                case "Wednesday":
-                    Console.WriteLine(3);
-                    break;
-                case "Thursday":
-                    Console.WriteLine(4);
-                    break;
-                case "Friday":
-                    Console.WriteLine(5);
-                    break;
-                case "Saturday":
-                    Console.WriteLine(6);
-                    break;
-                case "Sunday":
-                    Console.WriteLine(7);
-                    break;
-                default:
-                    Console.WriteLine("Wrong value! Please give a day of a week");
-                    break;
-            }
-        }
-        public void CheckLetterIfVowel(char character)
-        {
-            /* Exercise 4
-             * write a program that will print input character is a vowel, consonant or not a letter
-             * Method 1: using a switch case
-             * Method 2: using if
-             * ---------------------------
-             * |input| result            |
-             * |-----|-------------------|
-             * |  a  | a is a vowel      |
-             * |  b  | b is a consonant  |
-             * ---------------------------
-             */
-            //your code here
-            switch (character)
-            {
-                case 'a':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                case 'e':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                case 'i':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                case 'o':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                case 'u':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                case 'y':
-                    Console.WriteLine(character + " is a vowel");
-                    break;
-
-                default:
-                    Console.WriteLine(character + " Consonant or not a letter");
-                    break;
-            }
-
-            if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character == 'u' || character == 'y')
-            {
-                Console.WriteLine(character + " Is a vowel.");
+                Console.WriteLine(matrixOfIntegers[rows / 2, columns / 2]);
             }
             else
             {
-                Console.WriteLine(character + " Consonant or not a letter");
+                Console.WriteLine("\nThis matrix doesn't have a central element");
             }
+
+
+        }
+        public void GetSummOfDiagonalsElements(int[,] matrixOfIntegers)
+        {
+            /*print to console the central element from matrixOfIntegers, if not exist print: "This matrix doesn't have a central element"
+             * |   input           | result              |
+             * |-------------------|---------------------|
+             * | {                 |                     |
+             * |  { 1,   3,  5},   | First diagonal: 145 |
+             * |  {-1, 100, 11},   | Second diagonal: 107|
+             * |  { 2,  15, 44}    |                     |
+             * |  }                |                     |
+             * |-----------------------------------------|
+             * |{                  |                     |
+             * | { 1,  6, 21,  8 },| This matrix doesn't |
+             * | { 5, -4,  5,  7 },| have a diagonals    |
+             * | {77,  5,  0, 74 } |                     |
+             * | }                 |                     |
+             * ------------------------------------------
+             *    
+             */
+            int first = 0, second = 0;
+            if (matrixOfIntegers.GetLength(0) == matrixOfIntegers.GetLength(1))
+            {
+                for (int i = 0; i < matrixOfIntegers.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrixOfIntegers.GetLength(0); j++)
+                    {
+                        if (i == j)
+                        {
+                            first += matrixOfIntegers[i, j];
+                        }
+
+                        if ((i + j) == (matrixOfIntegers.GetLength(0) - 1))
+                        {
+                            second += matrixOfIntegers[i, j];
+                        }
+                    }
+                }
+                Console.WriteLine("Principal Diagonal: " + first);
+
+                Console.WriteLine("Secondary Diagonal: " + second);
+            }
+            else
+            {
+                Console.WriteLine("\nThis  matrix doesn't have diagonals");
+            }
+        }
+
+        public void StarPrinter(int triangleHight)
+        {
+            /* Write a programm that will print a triagle of stars  with hight = triangleHight
+             *  Example: triangleHight = 3;
+             *  Result:   *
+             *           * *
+             *          * * * 
+             */
+
+
+            int i, j, k, space = 0;
+            space = triangleHight;
+            for (i = 1; i <= triangleHight; i++)
+            {
+
+                for (j = 1; j <= space; j++)
+                {
+                    Console.Write(" ");
+                }
+                space--;
+
+                for (k = 1; k <= i; k++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+
+       
+        }
+          
+   
+
+
+
+        public void SortList(IList<int> listOfNumbers)
+        {
+            
+
+            var result_set = listOfNumbers.OrderBy(num => num);
+
+      
+            Console.WriteLine("Sorted in Ascending order:");
+            foreach (int value in result_set)
+            {
+                Console.Write(value + " ");
+            }
+
         }
         public static void Main(String[] args)
         {
             Homework homework = new Homework();
+            IList<int> list = new List<int>() { -5, 8, -7, 0, 44, 121, -7 };
+       
 
-            //homework.CheckIfNumberIsEvenOrOdd(-11);
-            //homework.CheckIfNumberIsEvenOrOdd(11);
-            //homework.CheckIfNumberIsEvenOrOdd(8);
-            //---------------------------------------
-            //homework.NumberDivideToFour(10);
-            //homework.NumberDivideToFour(16);
-            ////---------------------------------------
-            //homework.DayOfWeek("Monday");
-            //homework.DayOfWeek("Sunday");
-            //homework.DayOfWeek("some day");
-            ////---------------------------------------
-            homework.CheckLetterIfVowel('p');
-            homework.CheckLetterIfVowel('i');
+            int[,] matrix = new int[3, 3] {
+                { 1,   3,  5},
+                { 2, 3, 5},
+                {100, 56 , -54} };
+            int[,] matrix2 = new int[3, 4] {
+                { 1,   3,  5,   6},
+                { 2,   3,  5,  78},
+                {100, 56 , -54, 6} };
 
+            //homework.GetCentralElementFromMatrix(matrix);
+            //homework.GetCentralElementFromMatrix(matrix2);
+            //homework.GetSummOfDiagonalsElements(matrix);
+            //homework.GetSummOfDiagonalsElements(matrix2);
+            //homework.StarPrinter(5);
+            //homework.SortList(list);
         }
+
     }
 }
